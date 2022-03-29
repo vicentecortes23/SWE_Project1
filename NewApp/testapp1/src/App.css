@@ -16,12 +16,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: orange;
   text-decoration: none;
 }
 
 a {
-color: white;
+color: orange;
 text-decoration: none;
 margin: 10px;
 font-size: 25px;
