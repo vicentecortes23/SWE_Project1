@@ -72,6 +72,7 @@ class Game extends React.Component {
       <div className="game">
         <div className="game-board">
           <Board />
+          <Iframe />
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
@@ -82,17 +83,17 @@ class Game extends React.Component {
   }
 }
 
-/*
+
 class Iframe extends React.Component  {
     render() {
       return(         
         <div>          
-          <Iframe title= "testTitle" src={this.props.src} height={this.props.height} width={this.props.width}/>         
+          <iframe title= "testTitle" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=cy5waGFuZzIyQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" height="500" width="500"/>         
         </div>
       );
     }
   }
-  */
+  
 
 // ========================================
 
@@ -100,7 +101,6 @@ class Iframe extends React.Component  {
 ReactDOM.render(
     <div>
     <Game />
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=cy5waGFuZzIyQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" height="500" width="500"/>
     </div>,
   document.getElementById('root')
 );
