@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Calendar from './pages/Calendar';
+import About from './pages/About';
 import { useState } from "react";
 
 function App() {
@@ -14,11 +15,13 @@ function App() {
         <Link to="/"> Home </Link>
         <Link to="/Calendar"> Calendar </Link>
         <Link to="/login"> Login </Link>
+        <Link to="/About"> About </Link>
       </nav>
       <Routes>
         <Route path="/" element ={<Home />} />
         <Route path="/calendar" element ={<Calendar />} />
         <Route path="/login" element ={<Login setIsAuth={setIsAuth} />} />
+        <Route path="/About" element ={<About/>} />
       </Routes></Router>
   );
 }
