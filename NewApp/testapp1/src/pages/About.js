@@ -1,4 +1,6 @@
 import React from 'react';
+import WebImage from './WebImage';
+
 
 function About() {
 
@@ -6,6 +8,7 @@ function About() {
 
         render() {
           return (
+
             <button className="linkbutton">
             
               
@@ -15,8 +18,14 @@ function About() {
       }
 
     return(<div>
+        
+
          <h2>The aggregator website is about robotics</h2>
-                <a href= "https://reactjs.org/tutorial/tutorial.html"><button>linkbutton</button> Visitsomething </a>
+                <a href= "https://reactjs.org/tutorial/tutorial.html">
+                  <button>linkbutton</button> Visitsomething 
+                </a>
+
+          <WebImage />
         
     </div>)
 }
