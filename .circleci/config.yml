@@ -8,8 +8,7 @@ jobs:
       - checkout
       - run:
           name: CHECK
-          command: |
-          pwd
+          command: pwd
           ls
           cd NewApp
           ls
