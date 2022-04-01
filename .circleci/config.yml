@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/SWE_Project1
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:16
     steps:
       - checkout
       - run:
