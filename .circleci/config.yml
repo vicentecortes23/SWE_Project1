@@ -5,19 +5,21 @@ jobs:
       - image: circleci/node:16
     steps:
       - checkout
+      
+      - run:
+          name: magic command
+          command: npm install react-scripts --save
+
       - restore_cache:
          keys:
             - v1-dependencies-{{checksum "package.json"}}
             - v1-dependencies-
 
-      - run:
-          name: magic command
-          command: npm install react-scripts --save
 
 
       - run:
           name: Install npm dependencies
-          command: npm install
+          command: npm install --save
             
 
       - save_cache:
@@ -27,7 +29,7 @@ jobs:
 
       - run:
           name: run unit tests
-          command: npm test
+          command: npm run
 workflows:
   build_test:
     jobs:
