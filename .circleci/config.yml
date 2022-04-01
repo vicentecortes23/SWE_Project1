@@ -8,7 +8,9 @@ jobs:
       - checkout
       - run:
           name: CHECK1
-          command: pwd
+          command: |
+            pwd
+            ls
       - run:
           name: CHECK2
           command: ls
