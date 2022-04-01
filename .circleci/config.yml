@@ -9,6 +9,7 @@ jobs:
       - run:
           name: CHECK
           command: pwd
+          command: ls
       - restore_cache:
           key: npm-cache-v1-{{ checksum "package-lock.json" }}
       - run:
