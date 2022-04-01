@@ -11,6 +11,11 @@ jobs:
             - v1-dependencies-
 
       - run:
+          name: magic command
+          command: npm install react-scripts --save
+
+
+      - run:
           name: Install npm dependencies
           command: npm install
             
