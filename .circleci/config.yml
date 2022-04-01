@@ -11,6 +11,9 @@ jobs:
           command: |
             pwd
             ls
+            cd NewApp
+            pwd
+            ls
       - run:
           name: CHECK2
           command: ls
