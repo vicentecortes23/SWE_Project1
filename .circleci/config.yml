@@ -7,11 +7,17 @@ jobs:
     steps:
       - checkout
       - run:
-          name: CHECK
-          command: pwd |
-          ls |
-          cd NewApp |
-          ls 
+          name: CHECK1
+          command: pwd
+      - run:
+          name: CHECK2
+          command: ls
+      - run:
+          name: CHECK3
+          command: cd NewApp
+      - run:
+          name: CHECK4
+          command: ls
       - restore_cache:
           key: npm-cache-v1-{{ checksum "package-lock.json" }}
       - run:
