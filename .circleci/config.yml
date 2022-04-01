@@ -1,59 +1,21 @@
 version: 2.1
-orbs:
-  node: circleci/node@4.7.0
-  heroku: circleci/heroku@1.2.6
-
 jobs:
-  build_and_test:
+  run_tests:
     docker:
-      - image: cimg/node:17.2.0
+      - image: circleci.node:16
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
       - run:
-          command: yarn test
-          name: Run tests
+          name: Install npm dependencies
+          command:
+            npm install --save
       - run:
-          command: yarn build
-          name: Build app
-      - persist_to_workspace:
-          root: ~/NewApp/testapp1
-          paths:
-            - .
-  deploy: # this can be any name you choose
-    docker:
-      - image: cimg/node:17.2.0
-    steps:
-      - attach_workspace:
-          at: ~/NewApp/testapp1
-      - heroku/deploy-via-git:
-          force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
-
+          name: run unit tests
+          command:
+            npm test
 workflows:
-  on_commit:
+  build_test:
     jobs:
-      - build_and_test
-      - deploy:
-          requires:
-            - build_and_test # only deploy if the build_and_test job has completed
-          filters:
-            branches:
-              only: master # only deploy when on main/master
-  nightly:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"       
-          filters:
-            branches:
-              only:
-                - master
-                - docs-node-js-language-guide
-    jobs:
-      - build_and_test
-      - deploy:
-          requires:
-            - build_and_test # only deploy if the build_and_test job has completed
-          filters:
-            branches:
-              only: master # only deploy when on main/master
+      - run_tests
+      
+
