@@ -20,7 +20,7 @@ jobs:
           command: yarn build
           name: Build app
       - persist_to_workspace:
-          root: ~/../NewApp
+          root: ~../NewApp/testapp1
           paths:
             - .
   deploy: # this can be any name you choose
@@ -28,7 +28,7 @@ jobs:
       - image: cimg/node:17.2.0
     steps:
       - attach_workspace:
-          at: ~/../NewApp
+          at: ~../NewApp/testapp1
       - heroku/deploy-via-git:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
 
@@ -39,23 +39,15 @@ workflows:
       - deploy:
           requires:
             - build_and_test # only deploy if the build_and_test job has completed
-          filters:
-            branches:
-              only: master # only deploy when on main/master
+
   nightly:
     triggers:
       - schedule:
           cron: "0 0 * * *"       
-          filters:
-            branches:
-              only:
-                - master
-                - docs-node-js-language-guide
+
     jobs:
       - build_and_test
       - deploy:
           requires:
             - build_and_test # only deploy if the build_and_test job has completed
-          #filters:
-          #  branches:
-          #    only: master # only deploy when on main/master
+
