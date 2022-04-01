@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ../NewApp/testapp1
+    working_directory: ~/SWE_Project1/NewApp/testapp1
     docker:
       - image: circleci/node:8
     steps:
