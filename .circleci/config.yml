@@ -25,7 +25,7 @@ jobs:
             - .
   deploy: # this can be any name you choose
     docker:
-      - image: cimg/node:17.2.0
+      - image: cimg/node:16.14.1
     steps:
       - attach_workspace:
           at: ~/NewApp/testapp1
