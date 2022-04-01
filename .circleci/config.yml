@@ -1,14 +1,14 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/SWE_Project1/NewApp/testapp1/NewApp/testapp1
+    working_directory: ~/SWE_Project1
     docker:
       - image: circleci/node:8
     steps:
       - checkout
       - run:
           name: CHECK
-          command: ls
+          command: cd NewApp/testapp1
       - restore_cache:
           key: npm-cache-v1-{{ checksum "package-lock.json" }}
       - run:
