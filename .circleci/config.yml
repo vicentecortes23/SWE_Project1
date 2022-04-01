@@ -20,7 +20,7 @@ jobs:
           command: yarn build
           name: Build app
       - persist_to_workspace:
-          root: ~../NewApp/testapp1
+          root: ~/NewApp/testapp1
           paths:
             - .
   deploy: # this can be any name you choose
@@ -28,7 +28,7 @@ jobs:
       - image: cimg/node:17.2.0
     steps:
       - attach_workspace:
-          at: ~../NewApp/testapp1
+          at: ~/NewApp/testapp1
       - heroku/deploy-via-git:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
 
