@@ -20,7 +20,7 @@ jobs:
           command: yarn build
           name: Build app
       - persist_to_workspace:
-          root: ~/project
+          root: ~../NewApp
           paths:
             - .
   deploy: # this can be any name you choose
