@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from "./images/coolbannerimage.png"
+import pic from "./images/coolerbannerimage.png"
 
 function WebImage(){
     return(<img src ={pic} />
