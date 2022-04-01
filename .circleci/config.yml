@@ -28,7 +28,7 @@ jobs:
       - image: cimg/node:17.2.0
     steps:
       - attach_workspace:
-          at: ~/project
+          at: ~/..
       - heroku/deploy-via-git:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
 
@@ -56,6 +56,6 @@ workflows:
       - deploy:
           requires:
             - build_and_test # only deploy if the build_and_test job has completed
-          filters:
-            branches:
-              only: master # only deploy when on main/master
+          #filters:
+          #  branches:
+          #    only: master # only deploy when on main/master
