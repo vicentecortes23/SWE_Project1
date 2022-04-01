@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   run_tests:
 
-    working_directory: ~/repo
+    
 
     docker:
       - image: circleci/node:16
