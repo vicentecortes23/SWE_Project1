@@ -9,7 +9,7 @@ jobs:
       - run:
           name: CHECK
           command: |
-          pw
+          pwd
           ls
           cd NewApp
           ls
