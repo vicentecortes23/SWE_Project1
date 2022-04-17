@@ -1,0 +1,68 @@
+/*can import font styles and other stuff at the top */
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(14rem,16rem));
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+.card{
+    overflow: hidden;
+    box-shadow: 0 2px 20px #3f3b3f;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+.card_image{
+    height: 12rem;
+    width:100%;
+    object-fit:cover;
+}
+.card_title{
+    padding: 1rem;
+}
+.card_description{
+    padding:0 1rem;
+}
+
+/* the auto thing is a little archaic, but putting 5 of them gets it into a nice format, need to research it more*/
+.card_sociallink_container{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto
+    
+
+}
+/*
+.card_sociallink{
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #dc4319;
+    background:transparent;
+    color: #dc4319;
+    border-radius: 0.2rem;
+
+
+}
+*/
