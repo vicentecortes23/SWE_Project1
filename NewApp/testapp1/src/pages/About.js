@@ -6,6 +6,7 @@ import board2 from "./images/board2.jpg"
 import board3 from "./images/board3.jpg"
 import soft1 from "./images/soft1.jpg"
 import soft2 from "./images/soft2.jpg"
+import teamPhoto from "./images/teamPhoto.jpg"
 import "./About.css"
 class Team extends React.Component {
   constructor(props) {
@@ -53,7 +54,7 @@ class Team extends React.Component {
     return (
       <div className= "team-section">
         <div className="team-header">
-        <h1  onClick={() => this.handleClick()}>{this.props.teamName}</h1>
+        <h1  onClick={() => this.handleClick()}>{this.props.teamName} {this.state.isExpanded ? "𝅎":"‣"}</h1>
         </div>
         <div className="team-description">
           {this.renderDescription()}
@@ -74,6 +75,7 @@ class About extends Component {
         <div className="about-us-section" style={{whiteSpace: "pre-wrap"}}>
         <Team
         teamName="About Us"
+        teamImage1 = {teamPhoto}
         description =
          {"Aggregator is a collaborative project that competes in the NASA Lunabotics Competition. The project consists of the design, development,and construction of an autonomous mobile robot capable of completing objectives highlighted in the Lunabotics Competition rules of the year. Aggregator’s main objective is to connect bright engineers, both professional and novice, to facilitate a productive learning experience and conquer engineering problems.We accept anyone with drive and passion for engineering. Through Aggregator, one can expect to learn how to create robust mechanical design, use SolidWorks, manufacture, develop microcontrollers, code C++, and use ROS.\n\nWe typically meet Tuesdays, Thursdays, or Saturdays depending on the sub-team you wish to participate in (there are mechanical and electrical/software sub teams).\n\nTo get the most up-to-date information about meeting times and events check out our Calendar and join our discord for notifications. Our leadership changes annually, so it is best, and easiest, to contact us directly via discord, slack, or instagram. You can do so by asking questions in the questions channel or direct messaging anyone that is a Lead or an Executive Board member. Contact information can be found on our Contacts page."}
         />
@@ -89,7 +91,7 @@ class About extends Component {
       </div>
       <div className="electrical-team-section">
         <Team
-        teamName="Electrical Team"
+        teamName="Electrical Team" 
         teamImage1= {board1}
         teamImage2= {board2}
         teamImage3= {board3}
