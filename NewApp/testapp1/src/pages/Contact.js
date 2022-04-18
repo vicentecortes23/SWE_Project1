@@ -9,19 +9,19 @@ function Card(props){
                 <h2 className="card_title">{props.title}</h2>
                 <p className="card_description">{props.description}</p>
                 <div className="card_sociallink_container">
-                    <a href={props.discord_link}> 
+                    <a href={props.discord_link} target="_blank"> 
                     <button className="card_sociallink">
                         <img src="https://cdn.discordapp.com/attachments/634971492228136970/965267911105212466/discordlogo.png" />
                     </button>
                     </a>
                     <h1></h1>
-                    <a href={props.slack_link}>
+                    <a href={props.slack_link} target="_blank">
                                 <button className="card_sociallink">
                                     <img src="https://cdn.discordapp.com/attachments/634971492228136970/965268571150254190/slacklogo.png" />
                                 </button>
                     </a>
                     <h1></h1>
-                    <a href={props.instragram_link}>
+                    <a href={props.instragram_link} target="_blank">
                                 <button className="card_sociallink">
                                     <img src ="https://cdn.discordapp.com/attachments/634971492228136970/965268886465437746/instalogo.png"/>
                                 </button>

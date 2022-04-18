@@ -1,0 +1,32 @@
+body, h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.team-section{
+    text-align: "right";
+    max-width: 800px;
+    margin: auto;
+    padding-top: 0px;
+}
+.team-description{
+    display:"inline-block";
+    text-align: "left";
+    padding-top: 20px;
+}
+
+ul {
+    list-style: "";
+    padding-bottom: 25px;
+}
+
+li {
+    margin: 20px 0;
+}
+
+.bottom-buffer {
+    padding-bottom: 350px;
+}
+
+.top-buffer {
+    padding-bottom: 25px;
+}
