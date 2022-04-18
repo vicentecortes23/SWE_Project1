@@ -1,8 +1,8 @@
 body {
-    background: gray;
+    background: black;
   }
 
   img {
-    max-width: 100%;
+    max-width: auto;
     max-height: 100%;
 }
