@@ -33,26 +33,13 @@ function Card(props){
     )
 }
 
-        /*
-        <a href= "https://discord.com/invite/2QPW8Uk">
-                  <button>Aggregator Discord</button>
-        </a>
-        <h1></h1>
-        <a href= "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA">
-                    <button>Gator Robotics Slack</button>
-        </a>
-        <h1></h1>
-        <a href= "https://www.instagram.com/aggregatoruf/?hl=en">
-                    <button>Aggregator Instagram</button>
-        </a>
-        */
-
+    
 function Contact() {
     return(<div className="wrapper">
         <Card
-        img = "https://cdn.discordapp.com/attachments/634971492228136970/965253548151558194/unknown.png"
-        title = "Dwayne The Rock Johnson"
-        description = "Not officially apart of gator robotics but he is here none the less"
+        img = "https://cdn.discordapp.com/attachments/634971492228136970/965711192779812865/unknown.png"
+        title = "Aggregator links"
+        description = "The official discord, slack and instagram of the aggregator club"
         discord_link = "https://discord.com/invite/2QPW8Uk"
         slack_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
         instragram_link = "https://www.instagram.com/aggregatoruf/?hl=en"

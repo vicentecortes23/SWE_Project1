@@ -14,6 +14,7 @@ body{
 }
 
 .wrapper{
+    background-color: #3f3b3f;
     display: grid;
     grid-template-columns: repeat(auto-fit,
     minmax(14rem,16rem));
@@ -23,6 +24,7 @@ body{
 }
 
 .card{
+    background-color: blanchedalmond;
     overflow: hidden;
     box-shadow: 0 2px 20px #3f3b3f;
     border-radius: 0.2rem;
@@ -30,10 +32,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    transition: transform 200ms ease-in;
+    
 }
 .card_image{
-    height: 12rem;
+    height: 16rem;
     width:100%;
     object-fit:cover;
 }
@@ -51,6 +53,14 @@ body{
     
 
 }
+
+.card_sociallink:hover{
+    background-color: aliceblue;
+    opacity:0.2;
+    transition-duration:0.5;
+
+}
+
 /*
 .card_sociallink{
     padding:1rem;
