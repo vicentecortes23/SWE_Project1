@@ -10,6 +10,8 @@ import { useState } from "react";
 import {signOut} from "firebase/auth";
 import {auth} from "./firebase-config"
 import React  from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
