@@ -17,7 +17,7 @@ body{
     background-color: #3f3b3f;
     display: grid;
     grid-template-columns: repeat(auto-fit,
-    minmax(14rem,16rem));
+    minmax(14rem,12rem));
     gap: 2rem;
     justify-content: center;
 
@@ -49,9 +49,17 @@ body{
 /* the auto thing is a little archaic, but putting 5 of them gets it into a nice format, need to research it more*/
 .card_sociallink_container{
     display:grid;
-    grid-template-columns: auto auto auto auto auto
-    
+    grid-template-columns: auto auto auto ;
 
+}
+
+.card_sociallink{
+    border:none;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    overflow: hidden;
 }
 
 .card_sociallink:hover{
@@ -60,6 +68,7 @@ body{
     transition-duration:0.5;
 
 }
+
 
 /*
 .card_sociallink{

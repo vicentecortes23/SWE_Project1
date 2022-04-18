@@ -1,7 +1,40 @@
 import React from "react"
 import './Contact.css';
+import emailicon from './images/emailiconbig.png';
+import linkedin_icon from './images/linkedinglogobig.png';
+import alberta from './images/albertagator.png';
+import sampleperson from './images/sampleperson.png';
+
 
 function Card(props){
+    return(
+        <div className="card">
+            <div className="card__body">
+                <img src={props.img} className="card_image"></img>
+                <h2 className="card_title">{props.title}</h2>
+                <p className="card_description">{props.description}</p>
+                <div className="card_sociallink_container">
+                    <a href={props.email_link} target="_blank"> 
+                    <button className="card_sociallink">
+                        <img src={emailicon} />
+                    </button>
+                    </a>
+                    <h1></h1>
+                    <a href={props.linkedin_link} target="_blank">
+                                <button className="card_sociallink">
+                                    <img src={linkedin_icon} />
+                                </button>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+/*
+function Card2(props){
     return(
         <div className="card">
             <div className="card__body">
@@ -33,9 +66,7 @@ function Card(props){
     )
 }
 
-    
-function Contact() {
-    return(<div className="wrapper">
+
         <Card
         img = "https://cdn.discordapp.com/attachments/634971492228136970/965711192779812865/unknown.png"
         title = "Aggregator links"
@@ -44,23 +75,42 @@ function Contact() {
         slack_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
         instragram_link = "https://www.instagram.com/aggregatoruf/?hl=en"
         />
+*/
 
+    
+function Contact() {
+    return(<div className="wrapper">
+        
         <Card 
-        img = "https://cdn.discordapp.com/attachments/634971492228136970/965260154947915786/unknown.png"
-        title = "Sample member"
-        description = "im bad at paint, also when you click the link it doesnt automatically open a new tab yet, so you'll have to do that yourself right now"
-        discord_link = "https://discord.com/invite/2QPW8Uk"
-        slack_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
-        instragram_link = "https://www.instagram.com/aggregatoruf/?hl=en"
+        img = {alberta}
+        title = "Alberta"
+        description = "Alberta wants you to join aggregator!"
+        email_link = "https://discord.com/invite/2QPW8Uk"
+        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
         />
 
         <Card 
-        img = "https://cdn.discordapp.com/attachments/634971492228136970/965260154947915786/unknown.png"
+        img = {sampleperson}
         title = "Sample member"
-        description = "also for some reason when you hover over anything it gives you the pointer to click a link, need to fix that"
-        discord_link = "https://discord.com/invite/2QPW8Uk"
-        slack_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
-        instragram_link = "https://www.instagram.com/aggregatoruf/?hl=en"
+        description = ""
+        email_link = "https://discord.com/invite/2QPW8Uk"
+        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
+        />
+
+        <Card 
+        img = {sampleperson}
+        title = "Sample member"
+        description = ""
+        email_link = "https://discord.com/invite/2QPW8Uk"
+        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
+        />
+
+        <Card 
+        img = {sampleperson}
+        title = "Sample member"
+        description = ""
+        email_link = "https://discord.com/invite/2QPW8Uk"
+        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
         />
 
     </div>
