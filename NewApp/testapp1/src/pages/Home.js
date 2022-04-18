@@ -1,8 +1,11 @@
-import React from "react";
+import React from "react"
+import pic from "./images/test.jpg"
 
 function Home() {
-
-    return <div> Home </div>
+    return (
+        <div> <center><img src ={pic} /></center>  
+        </div>
+    )
 }
 
 export default Home;
