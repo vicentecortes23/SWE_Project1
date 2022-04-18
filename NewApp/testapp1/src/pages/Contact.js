@@ -39,26 +39,26 @@ function Card(props){
 function Card2(props){
     return(
         <div className="card2">
-            <div className="card2__body">
-                <img src={props.img} className="card2_image"></img>
-                <h2 className="card2_title">{props.title}</h2>
-                <p className="card2_description">{props.description}</p>
+            <div className="card__body">
+                <img src={props.img} className="card_image"></img>
+                <h2 className="card_title">{props.title}</h2>
+                <p className="card_description">{props.description}</p>
                 <div className="card2_sociallink_container">
                     <a href={props.discord_link} target="_blank"> 
                     <button className="card2_sociallink">
-                        <img src={discordlogo} />
+                        <img class="link_img" src={discordlogo}  />
                     </button>
                     </a>
                     <h1></h1>
                     <a href={props.slack_link} target="_blank">
                                 <button className="card2_sociallink">
-                                    <img src={slacklogo} />
+                                    <img class="link_img" src={slacklogo}  />
                                 </button>
                     </a>
                     <h1></h1>
                     <a href={props.instragram_link} target="_blank">
                                 <button className="card2_sociallink">
-                                    <img src ={instagramlogo}/>
+                                    <img class="link_img" src ={instagramlogo}/>
                                 </button>
                     </a>
                 </div>

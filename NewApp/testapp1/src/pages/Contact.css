@@ -12,6 +12,13 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.link_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .wrapper{
     background-color: #3f3b3f;
     display: grid;
@@ -59,18 +66,17 @@ body{
 
 }
 
-img {
+.card_sociallink{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
 
-.card_sociallink{
     border: none;
     border-radius: 50%;
     height:5rem;
     width:5rem;
+    
 
 }
 
@@ -95,7 +101,7 @@ img {
 
 .card2_image{
     height: 18rem;
-    width:100%;
+    width:25rem;
     object-fit:cover;
 }
 .card2_title{
@@ -115,6 +121,9 @@ img {
 .card2_sociallink{
     border: none;
     border-radius: 50%;
+    height:4rem;
+    width:4rem;
+    
 }
 
 .card2_sociallink:hover{
