@@ -14,15 +14,17 @@ body{
 }
 
 .wrapper{
+    background-color: #3f3b3f;
     display: grid;
     grid-template-columns: repeat(auto-fit,
-    minmax(14rem,16rem));
+    minmax(14rem,12rem));
     gap: 2rem;
     justify-content: center;
 
 }
 
 .card{
+    background-color: blanchedalmond;
     overflow: hidden;
     box-shadow: 0 2px 20px #3f3b3f;
     border-radius: 0.2rem;
@@ -30,10 +32,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    transition: transform 200ms ease-in;
+    
 }
 .card_image{
-    height: 12rem;
+    height: 16rem;
     width:100%;
     object-fit:cover;
 }
@@ -47,10 +49,27 @@ body{
 /* the auto thing is a little archaic, but putting 5 of them gets it into a nice format, need to research it more*/
 .card_sociallink_container{
     display:grid;
-    grid-template-columns: auto auto auto auto auto
-    
+    grid-template-columns: auto auto auto ;
 
 }
+
+.card_sociallink{
+    border:none;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.card_sociallink:hover{
+    background-color: aliceblue;
+    opacity:0.2;
+    transition-duration:0.5;
+
+}
+
+
 /*
 .card_sociallink{
     padding:1rem;
