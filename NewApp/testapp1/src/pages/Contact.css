@@ -58,8 +58,10 @@ body{
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
+    object-fit: cover;
     display: flex;
     overflow: hidden;
+
 }
 
 .card_sociallink:hover{

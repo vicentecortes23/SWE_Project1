@@ -1,7 +1,7 @@
 import React from "react"
 import './Contact.css';
-import emailicon from './images/emailiconbig.png';
-import linkedin_icon from './images/linkedinglogobig.png';
+import emailicon from './images/emailicon2.png';
+import linkedin_icon from './images/linkedinlogo2.png';
 import alberta from './images/albertagator.png';
 import sampleperson from './images/sampleperson.png';
 
@@ -21,9 +21,9 @@ function Card(props){
                     </a>
                     <h1></h1>
                     <a href={props.linkedin_link} target="_blank">
-                                <button className="card_sociallink">
-                                    <img src={linkedin_icon} />
-                                </button>
+                    <button className="card_sociallink">
+                        <img src={linkedin_icon} />
+                    </button>
                     </a>
 
                 </div>
