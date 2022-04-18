@@ -22,7 +22,27 @@ body{
 
 }
 
+.widecard{
+    overflow:hidden;
+    box-shadow: 0 2px 20px;
+    border-radius: 0 2px 20px #efefef;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    cursor:pointer;
+    transition: transform 200ms ease-in;
+}
+.wideCard_image{
+    height: 100%;
+    width: 14rem;
+    object-fit: cover;
+}
+
+/*
+object
+*/
 .card{
+    background-color:blanchedalmond;
     overflow: hidden;
     box-shadow: 0 2px 20px #3f3b3f;
     border-radius: 0.2rem;
@@ -30,12 +50,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    
     transition: transform 200ms ease-in;
 }
 .card_image{
-    height: 12rem;
-    width:100%;
+    height: 14rem;
+    width: 100%;
+    
     object-fit:cover;
+    
 }
 .card_title{
     padding: 1rem;
@@ -47,10 +70,26 @@ body{
 /* the auto thing is a little archaic, but putting 5 of them gets it into a nice format, need to research it more*/
 .card_sociallink_container{
     display:grid;
-    grid-template-columns: auto auto auto auto auto
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
     
+    
+}
+
+.card_sociallink{
+    background:transparent;
+    width:60px;
+    height:60px;
+    
+}
+
+.card_sociallink:hover{
+    background-color: aliceblue;
+    opacity:0.2;
+    transition-duration:0.5;
 
 }
+
 /*
 .card_sociallink{
     padding:1rem;
@@ -62,7 +101,8 @@ body{
     background:transparent;
     color: #dc4319;
     border-radius: 0.2rem;
-
+    border-radius: 50%;
+    
 
 }
 */
