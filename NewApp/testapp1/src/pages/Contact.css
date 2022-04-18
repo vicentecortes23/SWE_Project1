@@ -10,21 +10,29 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+}
+
+.link_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .wrapper{
     background-color: #3f3b3f;
     display: grid;
     grid-template-columns: repeat(auto-fit,
-    minmax(14rem,12rem));
+    minmax(14rem,16rem));
     gap: 2rem;
     justify-content: center;
+    height: 100%;
+    width: 100%;
 
 }
 
-.card{
-    background-color: blanchedalmond;
+.card1{
+    background-color:blanchedalmond;
     overflow: hidden;
     box-shadow: 0 2px 20px #3f3b3f;
     border-radius: 0.2rem;
@@ -34,13 +42,17 @@ body{
     cursor: pointer;
     
 }
+
+
+
 .card_image{
-    height: 16rem;
+    height: 18rem;
     width:100%;
     object-fit:cover;
 }
 .card_title{
     padding: 1rem;
+    text-align: center;
 }
 .card_description{
     padding:0 1rem;
@@ -50,16 +62,22 @@ body{
 .card_sociallink_container{
     display:grid;
     grid-template-columns: auto auto auto ;
+    justify-content: center;
 
 }
 
 .card_sociallink{
-    border:none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    border: none;
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-    display: flex;
-    overflow: hidden;
+    height:5rem;
+    width:5rem;
+    
+
 }
 
 .card_sociallink:hover{
@@ -68,6 +86,63 @@ body{
     transition-duration:0.5;
 
 }
+
+/************** card 2 ****************/
+.card2{
+    background-color:blanchedalmond;
+    overflow: hidden;
+    box-shadow: 0 2px 20px #3f3b3f;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.card2_image{
+    height: 18rem;
+    width:25rem;
+    object-fit:cover;
+}
+.card2_title{
+    padding: 1rem;
+    text-align: center;
+}
+.card2_description{
+    padding:0 1rem;
+}
+
+.card2_sociallink_container{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+
+}
+.card2_sociallink{
+    border: none;
+    border-radius: 50%;
+    height:4rem;
+    width:4rem;
+    
+}
+
+.card2_sociallink:hover{
+    background-color: aliceblue;
+    opacity:0.2;
+    transition-duration:0.5;
+
+}
+
+/*
+    object-fit: cover;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    overflow: hidden;
+*/
+
+
 
 
 /*
