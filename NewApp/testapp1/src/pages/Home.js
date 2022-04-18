@@ -8,7 +8,7 @@ function Home() {
             <center>
                 <img src ={pic} />
             </center>  
-            <div className="container">
+            <div>
                 <ContactUs/>
             </div>
         </div>
