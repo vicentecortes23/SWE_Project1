@@ -53,14 +53,25 @@ body{
 
 }
 
-.card_sociallink{
-    border:none;
+/*
+    object-fit: cover;
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
-    object-fit: cover;
     display: flex;
     overflow: hidden;
+*/
+
+.card_sociallink{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    height:5rem;
+    width:5rem;
+    align-items: flex-start;
+    object-fit: cover;
+    display:flex;
+
 
 }
 

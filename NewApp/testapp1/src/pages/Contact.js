@@ -1,7 +1,7 @@
 import React from "react"
 import './Contact.css';
-import emailicon from './images/emailicon2.png';
-import linkedin_icon from './images/linkedinlogo2.png';
+import emailicon from './images/emailiconbig.png';
+import linkedin_icon from './images/linkedinlogobig.png';
 import alberta from './images/albertagator.png';
 import sampleperson from './images/sampleperson.png';
 
