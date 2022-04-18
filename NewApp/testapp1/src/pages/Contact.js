@@ -5,7 +5,6 @@ import linkedin_icon from './images/linkedinlogobig.png';
 import alberta from './images/albertagator.png';
 import sampleperson from './images/sampleperson.png';
 
-
 function Card(props){
     return(
         <div className="card">
@@ -16,18 +15,16 @@ function Card(props){
                 <div className="card_sociallink_container">
                     <a href={props.email_link} target="_blank"> 
                     <button className="card_sociallink">
-                        <img src={emailicon} />
+                        <img src={emailicon} height="100%" width="100%" />
                     </button>
                     </a>
                     <h1></h1>
                     <a href={props.linkedin_link} target="_blank">
                     <button className="card_sociallink">
-                        <img src={linkedin_icon} />
+                        <img src={linkedin_icon} height="100%" width="100%" />
                     </button>
                     </a>
-
                 </div>
-
             </div>
         </div>
     )

@@ -10,21 +10,20 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
 }
 
 .wrapper{
     background-color: #3f3b3f;
     display: grid;
     grid-template-columns: repeat(auto-fit,
-    minmax(14rem,12rem));
+    minmax(14rem,16rem));
     gap: 2rem;
     justify-content: center;
 
 }
 
 .card{
-    background-color: blanchedalmond;
+    background-color:blanchedalmond;
     overflow: hidden;
     box-shadow: 0 2px 20px #3f3b3f;
     border-radius: 0.2rem;
@@ -34,6 +33,9 @@ body{
     cursor: pointer;
     
 }
+
+
+
 .card_image{
     height: 16rem;
     width:100%;
@@ -41,6 +43,7 @@ body{
 }
 .card_title{
     padding: 1rem;
+    text-align: center;
 }
 .card_description{
     padding:0 1rem;
@@ -50,6 +53,7 @@ body{
 .card_sociallink_container{
     display:grid;
     grid-template-columns: auto auto auto ;
+    justify-content: center;
 
 }
 
@@ -62,16 +66,18 @@ body{
     overflow: hidden;
 */
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .card_sociallink{
     border: none;
-    background-color: transparent;
     border-radius: 50%;
     height:5rem;
     width:5rem;
-    align-items: flex-start;
-    object-fit: cover;
-    display:flex;
-
 
 }
 
