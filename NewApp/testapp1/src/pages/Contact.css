@@ -24,7 +24,7 @@ body{
 
 }
 
-.card{
+.card1{
     background-color:blanchedalmond;
     overflow: hidden;
     box-shadow: 0 2px 20px #3f3b3f;
@@ -39,7 +39,7 @@ body{
 
 
 .card_image{
-    height: 16rem;
+    height: 18rem;
     width:100%;
     object-fit:cover;
 }
@@ -58,15 +58,6 @@ body{
     justify-content: center;
 
 }
-
-/*
-    object-fit: cover;
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-    display: flex;
-    overflow: hidden;
-*/
 
 img {
     display: block;
@@ -89,6 +80,60 @@ img {
     transition-duration:0.5;
 
 }
+
+/************** card 2 ****************/
+.card2{
+    background-color:blanchedalmond;
+    overflow: hidden;
+    box-shadow: 0 2px 20px #3f3b3f;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.card2_image{
+    height: 18rem;
+    width:100%;
+    object-fit:cover;
+}
+.card2_title{
+    padding: 1rem;
+    text-align: center;
+}
+.card2_description{
+    padding:0 1rem;
+}
+
+.card2_sociallink_container{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+
+}
+.card2_sociallink{
+    border: none;
+    border-radius: 50%;
+}
+
+.card2_sociallink:hover{
+    background-color: aliceblue;
+    opacity:0.2;
+    transition-duration:0.5;
+
+}
+
+/*
+    object-fit: cover;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    overflow: hidden;
+*/
+
+
 
 
 /*
