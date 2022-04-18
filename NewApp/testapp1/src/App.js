@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import { useState } from "react";
 import {signOut} from "firebase/auth";
 import {auth} from "./firebase-config"
+import React  from 'react';
+
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -26,12 +28,12 @@ function App() {
       <nav>
         <Link to="/"> Home </Link>
         <Link to="/Calendar"> Calendar </Link>
+        <Link to="/About"> About </Link>
+        <Link to="/Contact"> Contact </Link>
         {!isAuth ? 
           (<Link to="/login"> Login </Link>) 
           : (<button onClick={signOutUser}> Log Out </button>)
         }
-        <Link to="/About"> About </Link>
-        <Link to="/Contact"> Contact </Link>
       </nav>
       <Routes>
         <Route path="/" element ={<Home />} />
