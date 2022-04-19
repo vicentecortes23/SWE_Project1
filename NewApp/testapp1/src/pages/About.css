@@ -1,14 +1,22 @@
 body, h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*
-img {
+
+
+.image1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-*/
+
+.image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
 .team-section{
     text-align: "right";
     max-width: 800px;
