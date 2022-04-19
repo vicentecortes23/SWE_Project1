@@ -1,13 +1,10 @@
 
-/*body {
-    background-color: #cccccc;
-    background-image: url("file:///C:/Users/claus/Documents/GitHub/SWE_Project1/NewApp/testapp1/src/pages/images/Home_Background.jpg"); 
-    background-position: top;
-    background-repeat:initial;
-    background-size: cover;
-    position: relative;
-  }*/
-
+body{
+    background-color: #cccccca4;
+  }
+h1,h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 img.homebg {    
     margin: 0;
     opacity:1;
