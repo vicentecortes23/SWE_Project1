@@ -6,18 +6,35 @@ import board2 from "./images/board2.jpg"
 import board3 from "./images/board3.jpg"
 import soft1 from "./images/soft1.jpg"
 import soft2 from "./images/soft2.jpg"
+
+import gearsGif from "./images/gearsGif.gif"
+import gearsStill from "./images/gearsStill.png"
+import lightningGif from "./images/lightningGif.gif"
+import lightningStill from "./images/lightningStill.png"
+import keyboardGif from "./images/keyboardGif.gif"
+import keyboardStill from "./images/keyboardStill.png"
+
 import teamPhoto from "./images/teamPhoto.jpg"
 import "./About.css"
 class Team extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isExpanded: false
+      isExpanded: false,
+      isHover: false
     };
   }
 
   handleClick() {
     this.setState({isExpanded: !this.state.isExpanded});
+  }
+
+  handleMouseEnter() {
+    this.setState({isHover: true});
+  }
+
+  handleMouseLeave() {
+    this.setState({isHover: false});
   }
 
   renderDescription() {
@@ -36,13 +53,13 @@ class Team extends React.Component {
         <div>
         <ul classname="images" >
         <li>
-        <img src={this.props.teamImage1}/>
+        <img class= "image1" src={this.props.teamImage1}/>
         </li>
         <li>
-        <img src={this.props.teamImage2}/>
+        <img class= "image1" src={this.props.teamImage2}/>
         </li>
         <li>
-        <img src={this.props.teamImage3}/>
+        <img class= "image1" src={this.props.teamImage3}/>
         </li>
         </ul>
         </div>
@@ -54,7 +71,7 @@ class Team extends React.Component {
     return (
       <div className= "team-section">
         <div className="team-header">
-        <h1  onClick={() => this.handleClick()}>{this.props.teamName} {this.state.isExpanded ? "𝅎":"‣"}</h1>
+        <h1  onClick={() => this.handleClick()} onMouseEnter={() => this.handleMouseEnter()} onMouseLeave={() => this.handleMouseLeave()}>{this.props.teamName} {this.state.isExpanded ? "𝅎":"‣"} {<img src={this.state.isHover ? this.props.gif:this.props.still} width="10%"/>}</h1>
         </div>
         <div className="team-description">
           {this.renderDescription()}
@@ -85,6 +102,8 @@ class About extends Component {
         teamName="Mechanical Team"
         teamImage1= {agg1}
         teamImage2= {agg2}
+        gif = {gearsGif}
+        still = {gearsStill}
         description =
          "Our mechanical team is responsible for designing, drafting and manufacturing the custom parts and assemblies on the Aggregator robot. We use popular design tools like SOLIDWORKS to produce detailed CAD models that help us bring our ideas to life! Additionally, this team is responsible for ordering the parts that we need and generating technical reports."
         />
@@ -95,6 +114,8 @@ class About extends Component {
         teamImage1= {board1}
         teamImage2= {board2}
         teamImage3= {board3}
+        gif = {lightningGif}
+        still = {lightningStill}
         description =
         "This team oversees the design and implementation of Aggregator's electrical systems. Our robot has two key subsystems: processing/navigation and motor interfacing. An Intel RealSense D435i camera is used for receiving camera data which is then sent to an ASUS UP2 board that runs on a Linux Distro to run ROS. A Teensy microprocessor is used to handle all low-level processes such as processing data from/to motor drivers and linear actuators. All are controlled in C through the Arduino IDE for ease of access."
         />
@@ -104,6 +125,8 @@ class About extends Component {
       teamName="Software Team"
       teamImage1= {soft1}
       teamImage2= {soft2}
+      gif = {keyboardGif}
+      still = {keyboardStill}
       description =
       "The Software team utilizes a host of various Arduino Libraries and ROS (Robot Operating System) to provide Aggregator the functionality it requires to get the job done. The basis of the robot's software is automation, navigation, and localization. Through software nodes are able to communicate via topics and services. Various additional libraries allow the system to interface with external motors and the drive train."
       />
