@@ -12,6 +12,9 @@ import { auth, provider } from "./firebase-config";
 import { signInWithPopup } from "firebase/auth";
 import React  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './pages/Footer';
+import "./pages/Footer.css";
+
 
 
 
@@ -33,6 +36,7 @@ function App() {
   };
 
   return (
+    <div>
     <Router>
       <nav>
         <Link to="/"> Home </Link>
@@ -53,7 +57,12 @@ function App() {
         <Route path="/login" element ={<Login setIsAuth={setIsAuth} />} />
         <Route path="/About" element ={<About/>} />
         <Route path="/Contact" element = {<Contact/>} />
-      </Routes></Router>
+      </Routes>
+    </Router>
+    <div>
+        <Footer/>
+    </div>
+  </div>
   );
 }
 
