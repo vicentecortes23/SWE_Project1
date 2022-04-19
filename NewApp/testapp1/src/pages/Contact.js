@@ -1,14 +1,19 @@
 import React from "react"
 import './Contact.css';
 import emailicon from './images/emailiconbig.png';
-import linkedin_icon from './images/linkedinglogobig.png';
+import linkedin_icon from './images/linkedinlogobig.png';
 import alberta from './images/albertagator.png';
 import sampleperson from './images/sampleperson.png';
+import discordlogo from './images/discordlogo.png';
+import instagramlogo from './images/instagramlogo.png';
+import slacklogo from './images/slacklogo.png'
 
+/*props are 
 
+ */
 function Card(props){
     return(
-        <div className="card">
+        <div className="card1">
             <div className="card__body">
                 <img src={props.img} className="card_image"></img>
                 <h2 className="card_title">{props.title}</h2>
@@ -16,16 +21,46 @@ function Card(props){
                 <div className="card_sociallink_container">
                     <a href={props.email_link} target="_blank"> 
                     <button className="card_sociallink">
-                        <img src={emailicon} />
+                        <img src={emailicon} height="100%" width="100%" />
                     </button>
                     </a>
                     <h1></h1>
                     <a href={props.linkedin_link} target="_blank">
-                                <button className="card_sociallink">
-                                    <img src={linkedin_icon} />
+                    <button className="card_sociallink">
+                        <img src={linkedin_icon} height="100%" width="100%" />
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function Card2(props){
+    return(
+        <div className="card2">
+            <div className="card__body">
+                <img src={props.img} className="card_image"></img>
+                <h2 className="card_title">{props.title}</h2>
+                <p className="card_description">{props.description}</p>
+                <div className="card2_sociallink_container">
+                    <a href={props.discord_link} target="_blank"> 
+                    <button className="card2_sociallink">
+                        <img class="link_img" src={discordlogo}  />
+                    </button>
+                    </a>
+                    <h1></h1>
+                    <a href={props.slack_link} target="_blank">
+                                <button className="card2_sociallink">
+                                    <img class="link_img" src={slacklogo}  />
                                 </button>
                     </a>
-
+                    <h1></h1>
+                    <a href={props.instragram_link} target="_blank">
+                                <button className="card2_sociallink">
+                                    <img class="link_img" src ={instagramlogo}/>
+                                </button>
+                    </a>
                 </div>
 
             </div>
@@ -33,7 +68,7 @@ function Card(props){
     )
 }
 
-/*
+/* unused code for a card that has a discord link, a slack link, and a instagram link
 function Card2(props){
     return(
         <div className="card">
@@ -67,7 +102,7 @@ function Card2(props){
 }
 
 
-        <Card
+    <Card
         img = "https://cdn.discordapp.com/attachments/634971492228136970/965711192779812865/unknown.png"
         title = "Aggregator links"
         description = "The official discord, slack and instagram of the aggregator club"
@@ -81,36 +116,53 @@ function Card2(props){
 function Contact() {
     return(<div className="wrapper">
         
-        <Card 
+        <Card2
         img = {alberta}
         title = "Alberta"
         description = "Alberta wants you to join aggregator!"
-        email_link = "https://discord.com/invite/2QPW8Uk"
-        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
+        discord_link = "https://discord.com/invite/2QPW8Uk"
+        slack_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
+        instragram_link = "https://www.instagram.com/aggregatoruf/?hl=en"
         />
 
         <Card 
         img = {sampleperson}
-        title = "Sample member"
-        description = ""
-        email_link = "https://discord.com/invite/2QPW8Uk"
-        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
+        title = "Mikhail Bagadion"
+        description = "President"
+        email_link = "m.bagadion@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/"
         />
 
         <Card 
         img = {sampleperson}
-        title = "Sample member"
-        description = ""
-        email_link = "https://discord.com/invite/2QPW8Uk"
-        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
+        title = "Patrick Argento"
+        description = "VP External"
+        email_link = "patrick.argento@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/"
         />
 
         <Card 
         img = {sampleperson}
-        title = "Sample member"
-        description = ""
-        email_link = "https://discord.com/invite/2QPW8Uk"
-        linkedin_link = "https://join.slack.com/t/gatorroboticsgroup/shared_invite/zt-rtjnmmsj-3FGkEFlA0FzAYft0SLZuMA"
+        title = "James Fesik"
+        description = "VP Internal"
+        email_link = "james.fesik@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/"
+        />
+
+        <Card 
+        img = {sampleperson}
+        title = "Ian Cook"
+        description = "Secretary"
+        email_link = "iancook@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/"
+        />
+
+        <Card 
+        img = {sampleperson}
+        title = "Bradley Shelley"
+        description = "Electrical Lead"
+        email_link = "shelleyb@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/"
         />
 
     </div>
