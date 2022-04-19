@@ -8,7 +8,7 @@ function Home() {
         <div> 
             <center>
             <div>
-                <img className="home" src ={pic} />
+                <img className="homebg" src ={pic} />
             </div>
             </center>  
             <div>

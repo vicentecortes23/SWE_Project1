@@ -8,14 +8,12 @@
     position: relative;
   }*/
 
-img.home {    
+img.homebg {    
     margin: 0;
     opacity:1;
     width: 100%;
     height: auto;
-    position:relative;
-    top: 0;
-    left: 0;
+    position:static;
     
 }
 
