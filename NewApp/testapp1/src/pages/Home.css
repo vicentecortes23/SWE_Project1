@@ -1,8 +1,10 @@
 
-body {
+body{
     background-color: #cccccca4;
   }
-
+h1,h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 img.homebg {    
     margin: 0;
     opacity:1;

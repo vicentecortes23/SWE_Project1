@@ -12,6 +12,10 @@ function Home() {
             </div>
             </center>  
             <div>
+                <center>
+                <h1> Contact Us</h1>
+                <h2> Please send us an email for information regarding the club, updates you'd like to see, or any comments!</h2>
+                </center>
                 <ContactUs/>
             </div>
         </div>
