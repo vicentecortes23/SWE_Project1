@@ -1,0 +1,32 @@
+
+/*body {
+    background-color: #cccccc;
+    background-image: url("file:///C:/Users/claus/Documents/GitHub/SWE_Project1/NewApp/testapp1/src/pages/images/Home_Background.jpg"); 
+    background-position: top;
+    background-repeat:initial;
+    background-size: cover;
+    position: relative;
+  }*/
+
+body{
+    padding-bottom: 100;
+}
+
+img.home {
+    padding-top: 100;
+    margin: 0;
+    min-height: 100%;
+    min-width: 1024px;
+    opacity:1;
+    width: 100%;
+    height: auto;
+    position:fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+img.responsive {
+  margin-top: 200;
+}
+

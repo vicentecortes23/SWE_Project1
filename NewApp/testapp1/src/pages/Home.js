@@ -1,12 +1,13 @@
 import React from "react"
-import pic from "./images/test.jpg"
+import pic from "./images/Home_Background.jpg"
 import ContactUs from './ContactUs';
+import "./Home.css"
 
 function Home() {
     return (
         <div>   
             <center>
-                <img src ={pic} />
+                <img className="img" src ={pic} />
             </center>  
             <div>
                 <ContactUs/>
@@ -14,5 +15,7 @@ function Home() {
         </div>
     )
 }
+
+
 
 export default Home;
