@@ -6,7 +6,11 @@ import alberta from './images/albertagator.png';
 import sampleperson from './images/sampleperson.png';
 import discordlogo from './images/discordlogo.png';
 import instagramlogo from './images/instagramlogo.png';
-import slacklogo from './images/slacklogo.png'
+import slacklogo from './images/slacklogo.png';
+import patrick from './images/patrick_argento.jpg';
+import james from './images/james_fesik.jpg';
+import brad from './images/bradley_shelley.jpg';
+import mik from './images/mik.jpg';
 
 /*props are 
 
@@ -126,45 +130,36 @@ function Contact() {
         />
 
         <Card 
-        img = {sampleperson}
+        img = {mik}
         title = "Mikhail Bagadion"
         description = "President"
-        email_link = "m.bagadion@ufl.edu"
-        linkedin_link = "https://www.linkedin.com/"
+        email_link = "mailto:m.bagadion@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/in/mikhail-bagadion"
         />
 
         <Card 
-        img = {sampleperson}
+        img = {patrick}
         title = "Patrick Argento"
         description = "VP External"
-        email_link = "patrick.argento@ufl.edu"
-        linkedin_link = "https://www.linkedin.com/"
+        email_link = "mailto:patrick.argento@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/in/patrick-argento-552311170/"
         />
 
         <Card 
-        img = {sampleperson}
+        img = {james}
         title = "James Fesik"
         description = "VP Internal"
-        email_link = "james.fesik@ufl.edu"
-        linkedin_link = "https://www.linkedin.com/"
+        email_link = "mailto:james.fesik@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/in/james-fesik/"
         />
 
         <Card 
-        img = {sampleperson}
-        title = "Ian Cook"
-        description = "Secretary"
-        email_link = "iancook@ufl.edu"
-        linkedin_link = "https://www.linkedin.com/"
-        />
-
-        <Card 
-        img = {sampleperson}
+        img = {brad}
         title = "Bradley Shelley"
         description = "Electrical Lead"
-        email_link = "shelleyb@ufl.edu"
-        linkedin_link = "https://www.linkedin.com/"
+        email_link = "mailto:shelleyb@ufl.edu"
+        linkedin_link = "https://www.linkedin.com/in/bradley-shelley/"
         />
-
     </div>
     ) 
 }

@@ -28,6 +28,7 @@ body{
     justify-content: center;
     height: 100%;
     width: 100%;
+    margin-bottom : 590px;
 
 }
 
@@ -53,6 +54,7 @@ body{
 .card_title{
     padding: 1rem;
     text-align: center;
+    font-size:x-large;
 }
 .card_description{
     padding:0 1rem;
@@ -76,6 +78,8 @@ body{
     border-radius: 50%;
     height:5rem;
     width:5rem;
+    margin-top: auto;
+    margin-bottom: 10;
     
 
 }
@@ -123,6 +127,7 @@ body{
     border-radius: 50%;
     height:4rem;
     width:4rem;
+    margin-top: 0px;
     
 }
 
