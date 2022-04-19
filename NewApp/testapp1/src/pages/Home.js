@@ -5,9 +5,11 @@ import "./Home.css"
 
 function Home() {
     return (
-        <div>   
+        <div> 
             <center>
-                <img className="img" src ={pic} />
+            <div>
+                <img className="home" src ={pic} />
+            </div>
             </center>  
             <div>
                 <ContactUs/>
